@@ -1,2 +1,2 @@
-A = "Hello"
-print(A)
+print("C")
+
