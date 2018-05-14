@@ -1,7 +1,6 @@
-A = "Hello"
-print(A)
-B = "World"
-print(B)
-print("D")
+import string
+
+print("Hello World")
+for c in string.ascii_lowercase:
+	print(c)
 print("Good Bye")
-print("End")
