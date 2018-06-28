@@ -1,8 +1,10 @@
 def fat(i):
-	if i< 1:
-		return 1
-	else:
-		fat_i =  i * fat(i-1)
-		return fat_i
+	fat_vet = [None]*(i+1)
+	fat_vet[0] = 1
+	for n in range(1,i+1):
+		fat_vet[n] = n * fat_vet[n-1]
 
-fat(4)
+	return fat_vet[i]
+
+fat_4 = fat(4)
+print(fat_4)
