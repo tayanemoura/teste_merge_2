@@ -1,4 +1,4 @@
-def fat(i):
+def fat_iterativo(i):
 	fat_vet = [None]*(i+1)
 	fat_vet[0] = 1
 	for n in range(1,i+1):
@@ -6,5 +6,5 @@ def fat(i):
 
 	return fat_vet[i]
 
-fat_4 = fat(4)
+fat_4 = fat_iterativo(4)
 print(fat_4)
